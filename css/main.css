@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h3.titulo-home {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.nav-home {
+    background-color: gray;
+}
+
+.nav-home nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-home ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-home ul li {
+    color: white;
+    cursor: pointer;
+}
+
+.img-logo {
+    max-height: 50px;
+}
+
+.main-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.imagen-section {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.footer-home {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+/* Media Queries para Responsive Design */
+@media (max-width: 768px) {
+    .nav-home nav ul {
+        flex-direction: column;
+    }
+
+    .main-home {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .form-home {
+        max-width: 100%;
+    }
+
+    .imagen-section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-home nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-home ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-home {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .imagen-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-home {
+        width: 100%;
+    }
+}
+
+
+
